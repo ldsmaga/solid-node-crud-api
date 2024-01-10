@@ -1,7 +1,7 @@
 import { ObjectId } from "mongodb";
 import { MongoClient } from "../../../database/mongo";
 import { IDeleteUserRepository } from "../../controllers/delete-users/protocols";
-import { User } from "../../models/users";
+import { User } from "../../models/user";
 
 export class MongoDeleteUserRepository implements IDeleteUserRepository {
   async deleteUser(id: string): Promise<User> {

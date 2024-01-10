@@ -3,7 +3,7 @@ import {
   CreateUserParams,
   ICreateUserRepository,
 } from "../../controllers/create-user/protocols";
-import { User } from "../../models/users";
+import { User } from "../../models/user";
 
 export class MongoCreateUserRepository implements ICreateUserRepository {
   async createUser(params: CreateUserParams): Promise<User> {
